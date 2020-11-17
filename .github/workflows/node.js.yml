@@ -30,7 +30,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
         # Set a SSH private key from repository secret value for pushing to the remote branch.
-        deploy_key: ${{ secrets.ACCESS_TOKEN}}
+        deploy_key: ${{ secrets.GH_PAGES}}
         publish_branch: gh-pages
         publish_dir: output
         cname: blog.lz1998.xin
