@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: lz1998
+tagline: lz1998's blog
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
