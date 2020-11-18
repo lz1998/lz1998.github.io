@@ -1,6 +1,6 @@
 ---
 title: 小米10至尊纪念版 安装xposed
-date: 2018-12-15
+date: 2020-11-17
 tags:
  - android
  - xposed
@@ -34,9 +34,8 @@ https://github.com/topjohnwu/MagiskManager/releases
 
 ## 使用修补后的boot.img启动
 
-需要Android SDK
+执行以下指令，需要Android SDK
 
-执行
 ```bash
 adb reboot bootloader
 fastboot boot magisk_patched.img
