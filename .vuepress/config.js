@@ -31,16 +31,16 @@ module.exports = {
         "link": "/timeline/",
         "icon": "reco-date"
       },
-      {
-        "text": "Docs",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
-      },
+      // {
+      //   "text": "Docs",
+      //   "icon": "reco-message",
+      //   "items": [
+      //     {
+      //       "text": "vuepress-reco",
+      //       "link": "/docs/theme-reco/"
+      //     }
+      //   ]
+      // },
       {
         "text": "Contact",
         "icon": "reco-message",
