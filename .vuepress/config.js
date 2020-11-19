@@ -20,6 +20,8 @@ module.exports = {
     ],
     "theme": "reco",
     "themeConfig": {
+        "noFoundPageByTencent": false,
+        "subSidebar": 'auto',
         "nav": [
             {
                 "text": "Home",
