@@ -93,23 +93,23 @@ module.exports = {
         "author": "lz1998",
         "authorAvatar": "/avatar.png",
         "record": "沪ICP备18003829号",
-        "startYear": "2017"
+        "startYear": "2020"
     },
     "markdown": {
         "lineNumbers": true
     },
-    "plugins": [
-        "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-        {
-            theme: ["haru2"],
-            // clean: true,
-            // modelStyle: {
-            //     position: "fixed",
-            //     left: "0px",
-            //     bottom: "0px",
-            //     opacity: "0.9",
-            //     zIndex: 99999
-            // }
-        }
-    ]
+    "plugins": {
+        "@vuepress-reco/vuepress-plugin-kan-ban-niang":
+            {
+                theme: ["haru2"],
+                clean: true,
+                // modelStyle: {
+                //     position: "fixed",
+                //     left: "0px",
+                //     bottom: "0px",
+                //     opacity: "0.9",
+                //     zIndex: 99999
+                // }
+            }
+    }
 }

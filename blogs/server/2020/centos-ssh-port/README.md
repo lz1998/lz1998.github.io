@@ -6,7 +6,7 @@ tags:
  - centos
  - ssh
 categories:
- - server
+ - Server
 ---
 
 ## 云服务器选择

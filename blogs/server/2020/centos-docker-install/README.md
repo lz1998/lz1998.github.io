@@ -6,7 +6,7 @@ tags:
  - centos
  - docker
 categories:
- - server
+ - Server
 ---
 
 ## Uninstall old versions

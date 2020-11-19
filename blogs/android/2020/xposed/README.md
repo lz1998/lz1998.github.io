@@ -7,7 +7,7 @@ tags:
  - root
  - magisk
 categories:
- -  android
+ -  Android
 ---
 
 ## 申请解锁
