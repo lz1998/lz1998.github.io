@@ -33,4 +33,4 @@ jobs:
         deploy_key: ${{ secrets.GH_PAGES}}
         publish_branch: gh-pages
         publish_dir: output
-        cname: blog.lz1998.xin
+        cname: blog.lz1998.net
