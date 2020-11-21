@@ -43,3 +43,5 @@ $ sudo yum install docker-ce docker-ce-cli containerd.io
 ```shell script
 $ sudo systemctl start docker
 ```
+
+参考：https://docs.docker.com/engine/install/centos/
