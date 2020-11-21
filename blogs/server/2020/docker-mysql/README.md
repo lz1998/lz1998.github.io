@@ -28,6 +28,13 @@ mysql:5.7 \
 --collation-server=utf8mb4_unicode_ci
 ```
 
+:::tip 提示
+建议使用5.7版本，8.0坑太多。
+
+必须使用`utf8mb4_unicode_ci`，否则会出现`???`乱码。
+:::
+
+
 ## PhpMyAdmin
 
 ```shell script
