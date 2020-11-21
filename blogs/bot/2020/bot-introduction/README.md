@@ -4,7 +4,7 @@ date: 2020-11-21
 tags:
  - bot
 categories:
- - bot
+ - Bot
 ---
 
 ## 整体介绍
@@ -88,7 +88,7 @@ public class HelloPlugin extends BotPlugin {
 
 配置application.yml
 
-```java
+```yaml
 spring:
   bot:
     plugin-list: # 配置插件列表（有序），如果插件返回0，继续执行剩余插件，如果插件返回1，终止剩余插件执行

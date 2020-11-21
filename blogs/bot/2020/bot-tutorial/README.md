@@ -1,12 +1,18 @@
 ---
-title: ProtobufBot快速上手
+title: ProtobufBot快速上手(Java)
 date: 2020-11-21
 tags:
  - bot
 categories:
- - bot
+ - Bot
 ---
 
+:::tip 环境配置
+- [IDEA Intellij](https://www.jetbrains.com/idea/download/)
+- JDK 1.8 (IDEA会自动配置)
+- Maven (IDEA会自动配置)
+- 可能因为某些原因导致国内速度较慢，需要自行解决
+:::
 
 ## 运行 QQ Client
 
@@ -22,15 +28,9 @@ categories:
 
 **只能登陆一个QQ**，如需登陆多个需要多开。
 
+也可以选择[Spring-Mirai-Client](https://github.com/ProtobufBot/Spring-Mirai-Client/releases)，可以多账号，但不稳定。
+
 ## 运行 Message Processor
-
-:::warning 环境配置
-- [IDEA Intellij](https://www.jetbrains.com/idea/download/)
-- JDK 1.8 (IDEA会自动配置)
-- Maven (IDEA会自动配置)
-- 可能因为某些原因导致国内速度较慢，需要自行解决
-:::
-
 
 下载[Spring-Mirai-Server](https://github.com/ProtobufBot/Spring-Mirai-Server/archive/master.zip)
 
@@ -39,4 +39,8 @@ categories:
 ![](./bot-project.png)
 
 点击运行，在任意群发送`hello`，机器人回复`hi`
+
+## 根据demo修改代码
+
+代码位置：`src/main/java/net/lz1998/pbbot/plugin/HelloPlugin.java`
 
