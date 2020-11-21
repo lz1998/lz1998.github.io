@@ -7,7 +7,11 @@ categories:
  - Bot
 ---
 
-:::tip 环境配置
+**QQ 机器人开发教程，hello world**
+
+<!-- more -->
+
+:::warning 环境配置
 - [IDEA Intellij](https://www.jetbrains.com/idea/download/)
 - JDK 1.8 (IDEA会自动配置)
 - Maven (IDEA会自动配置)
@@ -19,6 +23,12 @@ categories:
 下载[Go-Mirai-Client](https://github.com/ProtobufBot/Go-Mirai-Client/releases)
 
 解压后运行`Go-Mirai-Client-windows-amd64.exe`
+
+:::tip 提示
+看到Go不要害怕，不需要安装Go环境，这是已经编译后的可执行文件，可以直接双击运行(Windows)。
+
+Linux需要先添加运行权限`chmod +x ./Go-Mirai-Client-<系统>`，然后运行`./Go-Mirai-Client-<系统>`
+:::
 
 浏览器打开 http://localhost:9000/ 
 

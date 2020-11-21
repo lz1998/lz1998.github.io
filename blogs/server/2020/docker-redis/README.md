@@ -9,8 +9,11 @@ categories:
  - Server
 ---
 
-所有`xxx`位置需要修改成具体内容
+**Docker指令，记在博客，方便复制**
 
+<!-- more -->
+
+所有`xxx`位置需要修改成具体内容
 
 ## Redis
 
