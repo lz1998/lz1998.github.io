@@ -7,7 +7,7 @@ categories:
  - Bot
 ---
 
-**这是一个spring-boot-starter，可以用于快速创建机器人项目。**
+**这是一个spring-boot-starter，可以用于快速创建机器人项目。在阅读这篇文章之前需要先阅读"ProtobufBot快速上手"，并成功运行QQ Client。**
 
 <!-- more -->
 
