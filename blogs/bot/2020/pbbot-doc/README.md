@@ -15,11 +15,11 @@ categories:
 
 为了降低门槛，本文使用Java举例，如果用Kotlin会更爽。
 
-## 基本使用说明
+## 基本说明及举例
 
 ### 创建项目
 
-环境要求：
+**环境要求**
 - Intellij IDEA (有这个就行了)
 - JDK 1.8 (第一条 IDEA会自动装)
 - Maven (第一条 IDEA会自动装)
@@ -66,7 +66,7 @@ public class DemoPlugin extends BotPlugin {
 }
 ```
 
-解释：
+**解释**
 
 - `onPrivateMessage` 当收到私聊消息时执行，bot表示机器人，event中包含了私聊消息内容、发送者等基本信息
 - `event.getUserId();` 获取发送者QQ
@@ -100,7 +100,7 @@ public class DemoPlugin extends BotPlugin {
 }
 ```
 
-解释：
+**解释**
 
 - `onGroupMessage` 当收到群聊消息时执行，bot表示机器人，event中包含了消息内容、发送者、群号等基本信息
 - `event.getUserId();` 获取发送者QQ
@@ -127,7 +127,7 @@ public class DemoPlugin extends BotPlugin {
       port: 8081
     ```
 
-## 全部功能说明
+## 详细说明
 
 ### BotPlugin可接受的事件(Event)
 
@@ -141,10 +141,12 @@ public class DemoPlugin extends BotPlugin {
 - `onFriendAddNotice` 好友添加时调用此方法(事件已发生)
 - `onGroupRecallNotice` 群撤回消息时调用此方法
 - `onFriendRecallNotice` 好友撤回消息时调用此方法
-- `onFriendRequest` 加好友请求时调用此方法(还没加，请求要不要加)
-- `onGroupRequest` 加群请求/邀请时调用此方法(还没加，请求要不要加)
+- `onFriendRequest` 加好友请求时调用此方法(还没加，请求是否通过)
+- `onGroupRequest` 加群请求/邀请时调用此方法(还没加，请求是否通过)
 
 建议直接查看[BotPlugin源码](https://github.com/ProtobufBot/pbbot-spring-boot-starter/blob/master/src/main/kotlin/net/lz1998/pbbot/bot/BotPlugin.kt)
+
+如果你不知道event里面有什么，可以看[onebot_idl](http://github.com/protobufbot/onebot_idl)，或者输入`event.get`，等待代码编辑器自动提示
 
 ### Bot可执行的方法
 
