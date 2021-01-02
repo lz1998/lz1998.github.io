@@ -148,6 +148,23 @@ public class DemoPlugin extends BotPlugin {
 
 如果你不知道event里面有什么，可以看[onebot_idl](http://github.com/protobufbot/onebot_idl)，或者输入`event.get`，等待代码编辑器自动提示
 
+:::tip 好友/群 消息事件 特殊说明
+消息事件中的event包含两种消息格式：messageList(List)和rawMessage(String)
+
+1. messageList(较准确): 消息链 例如 `{"type":"image","data":{"url":"xxx"}}` -> `{"type":"at","data":{"qq":"xxx"}}` -> `{"type":"text","data":{"text":"hello"}}`
+
+    每个节点分为type(String类型，text/image/face等)和data(Map<String, String>类型，表示具体内容)
+
+    如果需要获取 @的目标、图片地址、表情ID 等数据，推荐使用messageList
+
+2. rawMessage(较不准确): 文本消息 例如 `@群成员 你好<image url="xxx"/><face id="123"/>`
+
+    messageList中的消息内容不经过任何转义，rawMessage中data中所有内容经过HTML encode
+
+    如果处理纯文字，或其他元素不重要时，推荐使用rawMessage，可以使用 `rawMessage.startsWith()`(Java)、`rawMessage.contains()`(Java)等方法处理字符串
+:::
+
+
 ### Bot可执行的方法
 
 - `sendPrivateMsg` 发送私聊消息
@@ -177,9 +194,11 @@ public class DemoPlugin extends BotPlugin {
 发送at，图片，表情等需要使用消息构造器
 
 ```java
+// 第一种方式 最后使用 bot.sendGroupMsg()
 Msg msg = Msg.builder().text().image().record().flash().face().at().atAll().share().reply();
 bot.sendGroupMsg(groupId, msg, false);
 
+// 第二种方式，最后直接 .sendToGroup()
 Msg.builder().text().image().record().flash().face().at().atAll().share().reply().sendToGroup(bot, groupId);
 ```
 
