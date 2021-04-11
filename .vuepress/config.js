@@ -95,7 +95,8 @@ module.exports = {
         "author": "lz1998",
         "authorAvatar": "/avatar.png",
         "record": "沪ICP备18003829号",
-        "startYear": "2020"
+        "startYear": "2020",
+        "mode": "light",
     },
     "markdown": {
         "lineNumbers": true
