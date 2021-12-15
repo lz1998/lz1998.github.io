@@ -95,6 +95,7 @@ module.exports = {
         "author": "lz1998",
         "authorAvatar": "/avatar.png",
         "record": "沪ICP备18003829号",
+        "recordLink": "https://beian.miit.gov.cn/",
         "startYear": "2020",
         "mode": "light",
     },
